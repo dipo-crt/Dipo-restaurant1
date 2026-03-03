@@ -42,7 +42,7 @@ body {
     grid-template-columns: 1fr; /* Simu ionyeshe picha moja moja kubwa */
   }
   .food-card img {
-    height: 220px !important;
+    height: 20px !important;
   }
 }
 body {
