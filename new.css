@@ -1,0 +1,277 @@
+body {
+  font-family:tahoma;
+  background-image:url('pikipiki.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #f09307;
+}
+.main-content{
+  max-width:800px;
+  margin: 50px auto;
+  background-color: black;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+}
+header {
+  background-color: #ecb605f1;
+  color: rgb(14, 13, 13);
+  text-align: center;
+  padding: 0px;
+  font-size: 25px;
+  font-style:bold;
+  font-family: 'poppins',Arial,sans-serif ;
+  background: #e79f04;
+  padding: 0px;
+  margin-top: 0px
+}
+h2 {
+  background-color:;
+  color: rgb(243, 180, 8);
+  text-align: center;
+  padding: 0px;
+  font-size: 50px;
+  font-style:Bahnschrift ;
+  font-family:  ;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  font-style: bold;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  padding: 5px 20px;
+  border:1px solid transparent;
+}
+.nav-links a:hover{
+  transition: 0.3s;
+  color: #030303;
+}
+main {
+  padding: 40px 20px;
+  text-align: justify;
+  word-spacing: 0.5cap;
+  font-size: 18px;
+  font-family: Arial Black;
+
+}
+.food-menu {
+    padding: 60px 10%;
+    text-align: center;
+  font-family: tohama ;
+  
+}
+
+.food-menu h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #e9bf04;
+    border-bottom: 3px solid #030303;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.food-card {
+    background: rgb(177, 151, 4);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.4s ease; 
+}
+.food-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.food-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s ease;
+    margin-bottom: 15px;
+}
+.food-card:hover img {
+    transform: scale(1.1); 
+}
+.food-info {
+    padding: 20px;
+    text-align: left;
+    color: #313030;
+    word-spacing: 1.cap;
+    font-family: 'Times New Roman', Times, serif bold;
+}
+.price {
+    color: #0d0e0dd7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+.hero{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 150px;
+  margin: auto;
+}
+.contact-section {
+    padding: 60px 5%;
+    background-color: #37ca0a;
+} 
+.input{
+  margin-bottom: 20px;
+} 
+.contact-info, contact-form{
+  flex:1;
+  min-width: 20px;
+}
+.confirmation-group {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4px;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #e9b407;
+}
+.confirmation-group input {
+        margin-top: 4px;
+    cursor: pointer;
+}
+
+form input, form textarea {
+  width: 300%;
+  padding: 10px;
+  border-radius: 15px 15px;
+  border: 1px solid #ccc;
+}
+form option{
+  width: 300%;
+  padding: 10px;
+  border-radius: 5px 10px;
+  border:1px solid #ccc;
+}
+form button {
+  background: #0077b6;
+  color: #fff;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.auth-forms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.auth-form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 300px;
+  border-radius: 8px;
+}
+footer {
+  background: #f19f05;
+  color: #131212;
+  text-align: center;
+  padding: 40px;
+  margin-top: 50px;
+  word-spacing: 0cap;
+  font-size: 20px;
+}
+details {
+    background: rgb(224, 155, 6);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  } 
+summary {
+   font-size: 18px;
+   font-weight: bold;
+   cursor: pointer;
+   color: #111111;
+  font-family:Bahnschrift  ;
+}
+.btn{
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #cc5c00;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: pulse 0.5s infinite;
+}
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+    box-shadow: #00ec27;
+  }
+  70%{
+    transform: scale(1.05);
+    box-shadow: #970000;
+  }
+  100%{
+    transform:scale(1);
+    box-shadow: #000000;
+  }
+}
+.btn:hover{
+  background-color: #ccc;
+  transform: translateY(-3PX);
+}
+.logo-container{
+  display: flow-root;
+  align-items: left;
+  gap: 0.5px;
+
+}
+.brand-logo{
+  height: 100px;
+  width:auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+    h2 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+    .content-section, body {
+        padding: 10px;
+    }
+  }
