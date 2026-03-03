@@ -269,7 +269,7 @@ summary {
   border-radius: 10px;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 20px) {
     nav ul {
         flex-direction: column; 
         align-items: center;
