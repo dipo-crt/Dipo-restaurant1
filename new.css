@@ -1,3 +1,50 @@
+/* 1. Mpangilio wa Ukurasa */
+body {
+  font-family: 'Tahoma', sans-serif;
+  background-image: url('pikipiki.png');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Siri ya Picha: Kufanya zilingane na zisipondeke */
+.food-card img {
+  width: 100% !important;
+  height: 180px !important; /* Punguza urefu kidogo ili zipendeze */
+  object-fit: cover !important;
+  display: block;
+}
+
+/* 3. Mpangilio wa Kadi (Grid) */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px;
+  padding: 15px;
+}
+
+.food-card {
+  background: rgba(177, 151, 4, 0.95);
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.food-info {
+  padding: 10px;
+  text-align: center;
+}
+
+/* 4. Kwa ajili ya Simu */
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr; /* Simu ionyeshe picha moja moja kubwa */
+  }
+  .food-card img {
+    height: 220px !important;
+  }
+}
 body {
   font-family:tahoma;
   background-image:url('pikipiki.png');
